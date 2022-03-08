@@ -1,0 +1,420 @@
+.w-nav {
+    flex: 1;
+    nav {
+        display: flex;
+        gap: 30px;
+    }
+    &.footer {
+        flex: 0;
+        padding: 0 30px 0;
+        nav {
+            gap: 25px;
+            flex-direction: column;
+        }
+        span {
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+}
+.w-page-title {
+    font-size: 54px;
+}
+.w-2-half-wrapper {
+    display: flex;
+    > div {
+        min-width: 50%;
+    }
+}
+.w-product {
+    display: flex;
+    padding: 50px 0 0;
+    justify-content: space-between;
+    gap: 100px;
+    position: relative;
+}
+.w-product-filter {
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: sticky;
+    top: 125px;
+    align-self: flex-start;
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        span {
+            font-size: 20px;
+            letter-spacing: -0.15px;
+            border-radius: 20px;
+        }
+    }
+}
+.w-product-card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px 15px;
+    flex: 1;
+}
+.w-product-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 31.5%;
+    position: relative;
+    .w-product-link {
+        position: absolute;
+    }
+}
+.w-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-bottom: 100%;
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+    img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+.w-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 11px;
+    &.product-page {
+        align-items: stretch;
+        gap: 0;
+        padding: 0 10px 0 70px;
+        margin: 50px 0 0;
+    }
+    &.footer {
+        max-width: 350px;
+    }
+}
+.w-product-name {
+    font-size: 22px;
+}
+.w-compagny-description {
+    padding: 20px 0 0;
+}
+
+// Product-page
+.w-gallery {
+    padding: 0 50px 0 0;
+}
+.product-name {
+    padding: 15px 0 0;
+    font-size: 40px;
+}
+.product-description {
+    padding: 30px 0 0;
+    line-height: 1.7;
+    font-size: 16px;
+    color: rgba(#000, 0.9);
+}
+.w-product-price {
+    display: grid;
+    padding: 25px 0 0;
+    gap: 10px;
+    grid-template: auto auto / auto auto;
+    align-self: flex-start;
+    justify-content: center;
+    > div {
+        display: inline-flex;
+    }
+}
+.product-discounted_price {
+    font-size: 28px;
+}
+.product-reduction {
+    font-size: 16px;
+    padding: 2.5px 7.5px;
+    border-radius: 5px;
+    align-items: center;
+    color: #000;
+    background: rgba(#000, 0.1);
+}
+.product-price {
+    color: rgba(#000, 0.5);
+    text-decoration: line-through;
+}
+.c-add-to-cart {
+    display: flex;
+    padding: 40px 0;
+    gap: 15px;
+    button {
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 0 15px;
+        padding: 17.5px 0;
+        background: #000;
+        color: #fff;
+        line-height: 1;
+        flex: 1;
+        cursor: pointer;
+    }
+}
+.w-add-to-cart-input {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    background: rgba(#000, 0.1);
+    min-width: 130px;
+    padding: 0 10px;
+    align-items: center;
+    > div {
+        display: flex;
+        align-items: center;
+        color: #000;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+    .minus,
+    .plus {
+        width: 30px;
+        height: 30px;
+        justify-content: center;
+        background: rgba(#000, 0);
+        cursor: pointer;
+        &:hover {
+            background: rgba(#000, 0.05);
+        }
+    }
+}
+
+.w-newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    h3 {
+        font-weight: 500;
+        font-size: 32px;
+        background: rgba(#000, 0.1);
+    }
+    p {
+        padding: 15px 0 0;
+    }
+    label {
+        border-radius: 12px;
+        width: 350px;
+        height: 55px;
+        background: #fff;
+        padding: 4px;
+        display: flex;
+        justify-content: space-between;
+    }
+    input {
+        color: #000;
+        font-weight: 500;
+        padding: 17px;
+        background: transparent;
+        &::placeholder {
+            color: #000;
+            font-weight: 500;
+        }
+    }
+    button {
+        justify-content: center;
+        padding: 0.5em 2em;
+        background: #000;
+        color: #fff;
+        line-height: 1;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+}
+.w-lightboxes {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    background: rgba(#000, 0.3);
+    display: none;
+    > div {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 440px;
+        background: #fff;
+        gap: 30px;
+        justify-content: center;
+    }
+}
+
+//Account
+.w-account {
+    justify-content: center;
+}
+.w-account-log-in {
+    display: flex;
+    flex-direction: column;
+    padding: 0 60px;
+}
+.w-account-log-in-input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    label {
+        border-radius: 12px;
+        height: 55px;
+        background: rgba(#000, 0.1);
+        padding: 4px;
+        display: flex;
+        justify-content: space-between;
+    }
+    input {
+        color: #000;
+        font-weight: 500;
+        padding: 17px;
+        background: transparent;
+        &::placeholder {
+            color: #000;
+            font-weight: 500;
+        }
+    }
+}
+.checkbox--container {
+    display: flex;
+
+    margin: 15px 0 0;
+    label {
+        position: relative;
+        align-items: flex-start;
+        display: flex;
+    }
+}
+#validation {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+#validation--style {
+    position: relative;
+    background: rgba(#000, 0.1);
+    margin: 0 20px 0 0;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+        background: rgba(0, 0, 0, 0.01);
+        transition: color 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    }
+    &::after {
+        font-family: "Material Icons";
+        content: "\e876";
+        display: inline-block;
+        position: absolute;
+        font-size: 22px;
+        width: auto;
+        height: 22px;
+        opacity: 0;
+        transition: 0.4s ease;
+    }
+}
+
+#validation:checked ~ #validation--style::after {
+    opacity: 1;
+}
+.w-account-btn {
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+.account-btn {
+    width: 50%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17.5px 0;
+    border: 1px solid #000;
+    color: #000;
+    background: #fff;
+    line-height: 1;
+    cursor: pointer;
+    &.bis {
+        background: #000;
+        color: #fff;
+    }
+}
+// Bag
+.w-product-list {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.w-bag-total {
+    border-top: 1px solid #efefef;
+    padding: 0 60px;
+    margin: 0 0 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.w-bag-total-detail {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    padding: 30px 0 0;
+    > div {
+        display: flex;
+        justify-content: space-between;
+        margin: 15px 0 0;
+        font-size: 15px;
+        &:last-child {
+            padding: 30px 0 0;
+            font-size: 20px;
+        }
+    }
+}
+.bag-btn {
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17.5px 0;
+    background: #000;
+    color: #fff;
+    line-height: 1;
+    cursor: pointer;
+}

@@ -1,0 +1,19 @@
+footer {
+    background: #000;
+    .l-lr {
+        padding: 0 135px;
+    }
+    .l-tb {
+        padding: 45px 0 160px;
+    }
+}
+.w-footer {
+    display: flex;
+    color: #fff !important;
+    justify-content: space-between;
+    gap: 50px;
+    >div {
+        display: flex;
+        flex-direction: column;
+    }
+}

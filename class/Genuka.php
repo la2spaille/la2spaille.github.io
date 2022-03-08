@@ -1,0 +1,2 @@
+<?php 
+// $genuka = new Genuka();
