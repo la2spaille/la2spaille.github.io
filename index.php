@@ -1,5 +1,6 @@
 <?php
-$curl = curl_init("https://dashboard.genuka.com/api/2021-10/companies/details/489");
+$curl = curl_init("https://dashboard.genuka.com/api/2021-10/companies/byurl?url=http://" . $_SERVER["HTTP_HOST"] . "/");
+
 curl_setopt_array($curl, [
     CURLOPT_CAINFO => __DIR__ . DIRECTORY_SEPARATOR . 'cert.pem',
     CURLOPT_RETURNTRANSFER => true
