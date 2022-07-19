@@ -1,0 +1,6 @@
+.w-2-half-wrapper {
+    display: flex;
+    > div {
+        min-width: 50%;
+    }
+}

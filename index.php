@@ -1,4 +1,6 @@
 <?php
+phpinfo();
+die();
 $curl = curl_init("https://dashboard.genuka.com/api/2021-10/companies/byurl?url=http://" . $_SERVER["HTTP_HOST"] . "/");
 
 curl_setopt_array($curl, [
